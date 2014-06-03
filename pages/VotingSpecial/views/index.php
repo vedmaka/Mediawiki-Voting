@@ -70,7 +70,7 @@
 
                 <span>|</span>
 
-                <a href="<?= $this->getActionURL( 'group/delete', $group->getId() ) ?>" onclick="return confirm('<?=wfMsg('wikivotevoting-js-link-confirm-delete')?>');">
+                <a href="<?= $this->getActionURL( 'group/delete', $group->getId() ) ?>" onclick="return confirm('<?=wfMsg('voting-js-link-confirm-delete')?>');">
                     <?= wfMsg('voting-speciallink-group-delete') ?>
                 </a>
 

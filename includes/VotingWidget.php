@@ -125,7 +125,7 @@ class VotingWidget
 
         /*Comment*/
         $widget .= '<div class="wv-voting-comments-block">
-            <label for="wv-comment-'.$group_id.'">Ваш комментарий: </label>
+            <label for="wv-comment-'.$group_id.'">'.wfMsg('voting-widget-comment-enter').'</label>
             <input maxlength="512" type="text" name="comment" id="wv-comment-'.$group_id.'" value="'.$comment.'" />
         </div>';
 

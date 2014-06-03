@@ -105,7 +105,8 @@ $messages['en'] = array(
 	'voting-type-create-2' => 'Scale',
 	'voting-type-create-3' => 'Weighted',
 	'voting-specialtype-type-display-title' => 'Display settings',
-	'voting-widget-vote-history' => 'Voting history'
+	'voting-widget-vote-history' => 'Voting history',
+	'voting-widget-comment-enter' => 'Your comment:',
 );
 
 /* Russian */
@@ -222,5 +223,6 @@ $messages['ru'] = array(
     'voting-type-create-2' => 'Шкала',
     'voting-type-create-3' => 'Больше-меньше',
 	'voting-specialtype-type-display-title' => 'Настройка отображения',
-	'voting-widget-vote-history' => 'История голосований'
+	'voting-widget-vote-history' => 'История голосований',
+	'voting-widget-comment-enter' => 'Ваш комментарий:',
 );

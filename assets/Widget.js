@@ -62,7 +62,7 @@
 
                 var Select = $('<select class="wvw-select"></select>');
 
-                    $(Select).append( $('<option value="-1" disabled selected >-'+mw.msg('wikivotevoting-js-select-control-null')+'-</option>') );
+                    $(Select).append( $('<option value="-1" disabled selected >-'+mw.msg('voting-js-select-control-null')+'-</option>') );
 
                     $(Titles).each(function(i,v){
 
@@ -270,7 +270,7 @@
     /* Send votings */
     function storeVotes( ratings, votes, groupId, pageId, revisionId, widget, Comment ) {
 
-        var ApiUrl = '/api.php?action=wikivotevoting&do=store&group_id='+groupId
+        var ApiUrl = '/api.php?action=voting&do=store&group_id='+groupId
             +'&ratings='+ratings.join(',')+'&votes='+votes.join(',')
             +'&comment='+Comment
             +'&page_id='+pageId
@@ -278,8 +278,8 @@
             +'&format=json';
         $.get( ApiUrl, function( data ){
 
-            var dataArr = data.wikivotevoting.data;
-            var status = data.wikivotevoting.status;
+            var dataArr = data.voting.data;
+            var status = data.voting.status;
 
             if (status.indexOf('error') != -1) {
 
@@ -395,12 +395,12 @@
                 if( value > ValMiddle ) {
 
                     $(element).addClass('font-color-green');
-                    $(element).html( mw.msg('wikivotevoting-js-view-format-yesno-yes') );
+                    $(element).html( mw.msg('voting-js-view-format-yesno-yes') );
 
                 }else{
 
                     $(element).addClass('font-color-red');
-                    $(element).html( mw.msg('wikivotevoting-js-view-format-yesno-no') );
+                    $(element).html( mw.msg('voting-js-view-format-yesno-no') );
 
                 }
 
