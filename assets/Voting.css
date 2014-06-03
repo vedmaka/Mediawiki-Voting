@@ -1,0 +1,48 @@
+table.wikivote-table {
+}
+
+table.wikivote-table th {
+    padding: 10px !important;
+}
+
+table.wikivote-table td {
+    padding: 10px !important;
+}
+
+.wv-menu-links {
+    padding: 10px 0 20px 0;
+}
+
+.wv-menu-links ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.wv-menu-links ul li {
+    list-style-image: none !important;
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 10px 0 0 !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.wvw-span-right {
+    line-height: 25px;
+    padding: 0 0 0 10px;
+}
+
+/* Statistics page */
+
+.wvw-stat-bit {
+
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 2px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+
+}

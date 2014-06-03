@@ -1,0 +1,422 @@
+.wvw-adminvotings-link {
+    width: 32px;
+    height: 32px;
+    background: url(/extensions/WikivoteVoting/assets/group-edit-link.png) 0 0 no-repeat;
+}
+
+.wvw-adminvotings-edit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.wikivote-voting-widget {
+    width: 100%;
+    min-height: 200px;
+
+    margin: 20px 0 20px 0;
+
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 5px 20px 0;
+    min-width: 600px;
+    overflow: hidden;
+
+    min-width: 800px;
+    margin-bottom: 40px;
+
+    position: relative;
+
+    /* border */
+    padding-top: 20px;
+    border-top: 2px solid #a9a9a9;
+
+}
+
+.wikivote-voting-widget .wvw-shadow {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    opacity: 0.1;
+    background-color: black;
+    display: none;
+}
+
+.wikivote-voting-widget .result-message {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    line-height: 18px;
+}
+
+.wikivote-voting-widget .wvw-title {
+
+    font-size: 22px;
+    padding: 20px 0 8px 20px;
+    text-shadow: 1px 1px 1px white;
+
+    color: rgb(75, 75, 75);
+
+}
+
+.wikivote-voting-widget .wvw-subtitle {
+
+    font-size: 14px;
+    padding: 8px 10px 10px 1px;
+    text-shadow: 1px 1px 1px white;
+
+    color: rgb(75, 75, 75);
+
+}
+
+.wikivote-voting-widget .wvw-ratings-table {
+
+    width: 80%;
+    margin: 0 0 0 20px;
+    font-size: 14px;
+
+}
+
+.wikivote-voting-widget table.wvw-ratings-table th,.wikivote-voting-widget table.wvw-ratings-table td {
+    text-align: left;
+    padding: 10px 0 10px 0;
+}
+
+.wikivote-voting-widget th.wvw-rating-title {
+    min-width: 80px;
+}
+
+.wikivote-voting-widget td.wvw-td-name {
+    font-weight: bold;
+}
+
+.wikivote-voting-widget td.wvw-td-value {
+    padding-left: 20px;
+}
+
+/* Div */
+
+.wikivote-voting-widget .wvw-ratings {
+
+
+
+}
+
+.wikivote-voting-widget .wvw-ratings-block {
+    width: 210px;
+    height: 150px;
+    padding: 15px;
+    margin: 0 0 16px 20px;
+    font-size: 14px;
+    background-color: #fefefe;
+/*    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.17);*/
+    float: left;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.wikivote-voting-widget .wvw-ratings-block .wvw-name {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 12px 0;
+}
+
+.wikivote-voting-widget .wvw-ratings-block .www-desc {
+
+    height: 80px;
+    overflow: hidden;
+    line-height: 18px;
+
+}
+
+.wikivote-voting-widget .wvw-ratings-block .wvw-value {
+
+    margin: 5px 0 0 0;
+
+}
+
+.wvw-select {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    /* height: 18px;*/
+    padding: 4px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555555;
+    height: 28px;
+    /* In IE7, the height of the select element cannot be changed by height, only font-size */
+    *margin-top: 4px;
+    /* For IE7, add top margin to align select with labels */
+    line-height: 28px;
+    border: 1px solid #bbb;
+}
+
+.wvw-select:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.wvw-switcher {
+    float: left !important;
+    margin: 0 -2px 0 0 !important;
+    clear: none !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
+    -webkit-border-top-left-radius: 0 !important;
+    -webkit-border-top-right-radius: 0 !important;
+    -webkit-border-bottom-right-radius: 0 !important;
+    -webkit-border-bottom-left-radius: 0 !important;
+
+    -moz-border-top-left-radius: 0 !important;
+    -moz-border-top-right-radius: 0 !important;
+    -moz-border-bottom-right-radius: 0 !important;
+    -moz-border-bottom-left-radius: 0 !important;
+}
+
+.wvw-switcher:first-child {
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 4px !important;
+
+    -webkit-border-top-left-radius: 4px !important;
+    -webkit-border-top-right-radius: 0 !important;
+    -webkit-border-bottom-right-radius: 0 !important;
+    -webkit-border-bottom-left-radius: 4px !important;
+
+    -moz-border-top-left-radius: 4px !important;
+    -moz-border-top-right-radius: 0 !important;
+    -moz-border-bottom-right-radius: 0 !important;
+    -moz-border-bottom-left-radius: 4px !important;
+}
+
+.wvw-switcher:last-child {
+    -moz-border-top-right-radius: 4px !important;
+    -moz-border-bottom-right-radius: 4px !important;
+    -webkit-border-top-right-radius: 4px !important;
+    -webkit-border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+
+.wvw-switcher-on {
+
+}
+
+/* Some bootstrap mess */
+
+.wikivote-voting-widget .wvw-submit, .wikivote-voting-widget .btn {
+
+    display: inline-block;
+    *display: inline;
+    padding: 4px 10px 4px;
+    margin-bottom: 0;
+    *margin-left: .3em;
+    font-size: 13px;
+    line-height: 18px;
+    *line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    *background-color: #e6e6e6;
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    *border: 0;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    *zoom: 1;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    clear: both;
+    float: left;
+    margin: 0 0 0 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+}
+
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9;
+}
+
+.btn:active,
+.btn.active {
+    background-color: #cccccc;
+}
+
+.btn:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    *background-color: #d9d9d9;
+    /* Buttons in IE7 don't get borders, so darken on hover */
+
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn.active,
+.btn:active {
+    background-color: #e6e6e6;
+    background-color: #d9d9d9;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn.disabled,
+.btn[disabled] {
+    cursor: default;
+    background-color: #e6e6e6;
+    background-image: none;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+    *padding-top: 7px;
+    *padding-bottom: 7px;
+}
+
+/* Summary widget */
+
+.wikivote-summary-widget {
+    width: 100%;
+    min-height: 150px;
+    background-color: #f4f4f4;
+    margin: 20px 0 20px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.17);
+
+    background-image: linear-gradient(bottom, rgb(245,245,245) 24%, rgb(224,224,224) 62%, rgb(222,222,222) 91%);
+    background-image: -o-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(224,224,224) 62%, rgb(222,222,222) 91%);
+    background-image: -moz-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(224,224,224) 62%, rgb(222,222,222) 91%);
+    background-image: -webkit-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(224,224,224) 62%, rgb(222,222,222) 91%);
+    background-image: -ms-linear-gradient(bottom, rgb(245,245,245) 24%, rgb(224,224,224) 62%, rgb(222,222,222) 91%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.24, rgb(245,245,245)),
+        color-stop(0.62, rgb(224,224,224)),
+        color-stop(0.91, rgb(222,222,222))
+    );
+
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 5px 20px 0;
+    min-width: 600px;
+    overflow: hidden;
+
+    min-width: 800px;
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.wikivote-summary-widget-title {
+
+    font-size: 22px;
+    padding: 20px 0 15px 20px;
+    text-shadow: 1px 1px 1px white;
+
+    color: rgb(75, 75, 75);
+
+}
+
+.wikivote-summary-rating {
+    width: 210px;
+    min-height: 80px;
+    padding: 15px;
+    margin: 0 0 16px 20px;
+    font-size: 14px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.17);
+    float: left;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.wikivote-summary-rating-title {
+
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+
+}
+
+.wikivote-summary-rating-value {
+    font-size: 22px;
+}
+
+.font-color-green {
+    color: #009200 !important;
+}
+
+
+.font-color-red {
+    color: #cc0000 !important;
+}

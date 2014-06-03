@@ -1,0 +1,17 @@
+{
+	"name": "mediawiki/voting",
+	"type": "mediawiki-extension",
+	"description": "Multi-criteria customizable rankings of the articles",
+	"homepage": "http://www.mediawiki.org/wiki/Extension:Voting",
+	"license" : "GPL-2.0+",
+	"require": {
+		"php": ">=5.3.0",
+		"mediawiki/model": "dev-master",
+		"composer/installers": ">=1.0.1"
+	},
+    "autoload": {
+        "files": [
+        	"Voting.php"
+        ]
+    }
+}
