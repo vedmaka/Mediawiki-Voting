@@ -226,16 +226,16 @@ class Voting
         }
 
 		//Push rc
-		if ( class_exists( 'WikivoteCustomVoting' ) ) {
+		if ( class_exists( 'CustomVoting' ) ) {
 			$rc_action = 'wv_vote';
 			if ( $isUpdate ) {
 				$rc_action = 'wv_change';
 			}
-			WikivoteCustomVoting::pushRCEvent(
+			CustomVoting::pushRCEvent(
 				Title::newFromID( $page_id ),
 				$rc_action,
-				wfMessage( 'wikivotevoting-log-action-' . $rc_action )->text(),
-				wfMessage( 'wikivotevoting-log-comment', $comment )->text(),
+				wfMessage( 'voting-log-action-' . $rc_action )->text(),
+				wfMessage( 'voting-log-comment', $comment )->text(),
 				User::newFromId( $user_id )
 			);
 		}

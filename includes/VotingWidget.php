@@ -159,7 +159,9 @@ class VotingWidget
         /* Fetch group ratings */
         $group = new Voting_Model_Group($group_id);
         $ratings = Voting_Model_Rating::find( array( 'group_id' => $group_id ) );
-        if(!count($ratings)) return '';
+        if(!count($ratings)) {
+	        return '';
+        }
 
         $widget .= '<div class="wikivote-summary-widget">
 
@@ -226,7 +228,9 @@ class VotingWidget
 
         }
 
-        if(!$atLeastOnce) return '';
+        if(!$atLeastOnce) {
+	        return '';
+        }
 
         $widget .= '</div>';
 

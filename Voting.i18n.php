@@ -107,6 +107,7 @@ $messages['en'] = array(
 	'voting-specialtype-type-display-title' => 'Display settings',
 	'voting-widget-vote-history' => 'Voting history',
 	'voting-widget-comment-enter' => 'Your comment:',
+	'voting-type-create-view-format' => 'View format',
 );
 
 /* Russian */
@@ -225,4 +226,5 @@ $messages['ru'] = array(
 	'voting-specialtype-type-display-title' => 'Настройка отображения',
 	'voting-widget-vote-history' => 'История голосований',
 	'voting-widget-comment-enter' => 'Ваш комментарий:',
+	'voting-type-create-view-format' => 'Формат отображения',
 );

@@ -5,7 +5,7 @@ class VotingSummaryJob extends Job
     public function __construct( $title, $params )
     {
         // Replace synchroniseThreadArticleData with an identifier for your job.
-        parent::__construct( 'wikivoteVotingSummary', $title, $params );
+        parent::__construct( 'VotingSummary', $title, $params );
     }
 
     /**

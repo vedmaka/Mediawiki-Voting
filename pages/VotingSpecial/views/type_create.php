@@ -55,7 +55,7 @@
         <legend><?=wfMsg('voting-specialtype-type-display-title')?></legend>
 
         <div class="control-group">
-            <label class="control-label" for="view_format">Формат</label>
+            <label class="control-label" for="view_format"><?=wfMsg('voting-type-create-view-format')?></label>
             <div class="controls">
 
                 <select class="input-xlarge" name="view_format" id="view_format">

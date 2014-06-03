@@ -673,3 +673,10 @@ input[type="submit"].btn.btn-large {
 .wv-voting-history .value-block .value-block-value {
     padding: 0 0 0 10px;
 }
+
+.wikivote-summary-rating-value .ui-progressbar-value, .wikivote-summary-rating-value .ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #cccccc !important;
+    color: #222222;
+    font-weight: bold;
+}
