@@ -727,4 +727,8 @@ class VotingSpecial extends RoutedSpecialPage {
 
     }
 
+	protected function getGroupName() {
+		return 'other';
+	}
+
 }
