@@ -6,7 +6,7 @@ $messages = array();
 /* English */
 $messages['en'] = array(
     /* Extension */
-    'voting-credits' => 'Enables multi-criteria customizable rankings of the articles',
+    'voting-credits' => 'Enables multi-criteria customizable rankings of the articles. Provides [[Special:Voting|configuration page]].',
     'voting' => 'Manage votings',
     'voting-specialdescription' => '',
     /* Admin page */
