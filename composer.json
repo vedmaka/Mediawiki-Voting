@@ -6,7 +6,7 @@
 	"license" : "GPL-2.0+",
 	"require": {
 		"php": ">=5.3.0",
-		"mediawiki/model": "dev-master",
+		"mediawiki/model": "@dev",
 		"composer/installers": ">=1.0.1"
 	},
     "autoload": {
