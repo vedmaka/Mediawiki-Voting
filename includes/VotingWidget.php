@@ -129,7 +129,7 @@ class VotingWidget
             <input maxlength="512" type="text" name="comment" id="wv-comment-'.$group_id.'" value="'.$comment.'" />
         </div>';
 
-                    $widget .= '<button class="btn-large wvw-submit" disabled >'.wfMsg('wikivotevoting-widget-send-votes').'</button>
+                    $widget .= '<button class="btn-large wvw-submit" disabled >'.wfMsg('voting-widget-send-votes').'</button>
 
                 </div>
 
@@ -246,10 +246,12 @@ class VotingWidget
 
         $html .= '<div class="wv-voting-history">';
 
-            $html .= '<div class="title-history">История голосований</div>';
-
             // Fetch data for all group votings
             $Values = Voting::fetchVotes( $group_id, $page_id, $revision_id, true );
+
+	        if( count($Values) ) {
+		        $html .= '<div class="title-history">'.wfMsg('voting-widget-vote-history').'</div>';
+	        }
 
             foreach( $Values as $valueGroup ) {
 
