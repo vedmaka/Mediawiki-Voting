@@ -47,6 +47,8 @@ $messages['en'] = array(
     'voting-error-input-common' => 'You have errors in you input. Check form.',
     'voting-js-select-control-null' => 'Choose option',
     'voting-js-link-confirm-delete' => 'Are you sure ?',
+    'voting-js-view-format-yesno-no' => 'No',
+    'voting-js-view-format-yesno-yes' => 'Yes',
     /* Group edit page */
     'voting-specialgroup-edit-title' => 'Edit $1 group.',
     'voting-specialgroup-edit-input-submit' => 'Save',
