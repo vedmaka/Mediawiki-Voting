@@ -9,7 +9,7 @@
  * @author Wikivote! ltd < http://wikivote.ru >
  */
 
-global $wgVersion,$wgExtensionCredits,$wgResourceModules,$wgExtensionMessagesFiles,$wgAutoloadClasses,$wgAvailableRights,$wgGroupPermissions,$wgHooks,$wgAPIModules,$wgJobClasses,$wgSpecialPages;
+global $wgWikivoteSummaryWidgetBottom,$wgWikivoteVotingPath,$wgWikivoteVotingDir,$wgVersion,$wgExtensionCredits,$wgResourceModules,$wgExtensionMessagesFiles,$wgAutoloadClasses,$wgAvailableRights,$wgGroupPermissions,$wgHooks,$wgAPIModules,$wgJobClasses,$wgSpecialPages;
 
 if ( !defined( 'MEDIAWIKI' ) ) {
     die('Not an entry point.');
