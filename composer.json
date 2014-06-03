@@ -13,5 +13,6 @@
         "files": [
         	"Voting.php"
         ]
-    }
+    },
+    "minimum-stability": "dev"
 }
