@@ -166,7 +166,12 @@ class Voting
                     'group_id' => $group_id
                 ) );
 
-                $votingValue = $votingValue[0];
+	            if( count($votingValue) ) {
+		            $votingValue = $votingValue[0];
+	            }else{
+		            /* Create new voting value */
+		            $votingValue = new Voting_Model_Value();
+	            }
 
             } else {
                 /* Create new voting value */

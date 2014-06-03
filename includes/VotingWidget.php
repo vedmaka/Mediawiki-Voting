@@ -107,7 +107,9 @@ class VotingWidget
                         /* Pass votes */
                         if( $ratings_values_ids != null ) {
 
-                            $widget .= ' stored_score="'.$ratings_values_ids[$rating->getId()].'" ';
+	                        if(array_key_exists($rating->getId(),$ratings_values_ids)) {
+		                        $widget .= ' stored_score="' . $ratings_values_ids[ $rating->getId() ] . '" ';
+	                        }
 
                         }
 
