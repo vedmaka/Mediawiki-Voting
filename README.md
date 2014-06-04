@@ -21,3 +21,7 @@ composer require mediawiki/voting @dev
 Usage
 =====
 You can see screencast or read wiki for examples.
+
+Screenshots
+===========
+![Voting1](http://content.screencast.com/users/vedmakaa/folders/Snagit/media/b6727f91-22c4-4127-a9e4-6e20b0af47b7/06.04.2014-12.41.png)
