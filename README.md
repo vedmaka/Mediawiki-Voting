@@ -20,7 +20,7 @@ composer require mediawiki/voting @dev
 
 Usage
 =====
-You can see screencast or read wiki for examples.
+You can see screencast or [read wiki](http://github.com/vedmaka/Mediawiki-Voting/wiki) for examples.
 
 Screenshots
 ===========
