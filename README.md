@@ -17,3 +17,7 @@ Extension should be installed via Composer. To do it, navigate to mediawiki root
 ```
 composer require mediawiki/voting @dev
 ```
+
+Usage
+=====
+You can see screencast or read wiki for examples.
