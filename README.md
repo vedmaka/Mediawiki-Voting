@@ -14,4 +14,6 @@ Installation
 ============
 Extension should be installed via Composer. To do it, navigate to mediawiki root folder and run:
 
-```composer require mediawiki/voting @dev```
+```
+composer require mediawiki/voting @dev
+```
