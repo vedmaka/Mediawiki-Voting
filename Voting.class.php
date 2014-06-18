@@ -291,13 +291,18 @@ class Voting
     public static function getWidget()
     {
 
-        global $wgUser, $wgOut, $wgArticle;
+	    /** @var $wgTitle Title */
+        global $wgUser, $wgOut, $wgTitle;
+
+	    $wgArticle = Article::newFromID($wgTitle->getArticleID());
 
         /* Check namespace */
 		if ( $wgOut->getTitle()->getNamespace() != NS_MAIN ) return '';
 
 		/* Check action */
 		if( $wgOut->getRequest()->getVal('action') && $wgOut->getRequest()->getVal('action') != 'view' ) return '';
+
+	    if( !$wgArticle ) { return ''; }
 
         $pageId = $wgArticle->getContext()->getWikiPage()->getId();
         $revisionId = $wgArticle->getContext()->getWikiPage()->getRevision()->getId();
@@ -372,7 +377,9 @@ class Voting
     public static function getSummaryWidget()
     {
 
-        global $wgUser, $wgArticle;
+        global $wgUser, $wgTitle;
+
+	    $wgArticle = Article::newFromID($wgTitle->getArticleID());
 
         if ( $wgArticle == null || $wgUser == null ) return '';
 

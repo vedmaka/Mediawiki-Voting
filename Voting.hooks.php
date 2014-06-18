@@ -80,8 +80,10 @@ class VotingHooks {
 	public static function s13n( SMWStore $store, SMWSemanticData $data )
 	{
 
-		/** @var Article $wgArticle */
-		global $wgUser, $wgArticle;
+		/** @var $wgTitle Title */
+		global $wgUser, $wgTitle;
+
+		$wgArticle = Article::newFromID($wgTitle->getArticleID());
 
 		$subject = $data->getSubject();
 		$title = Title::makeTitle( $subject->getNamespace(), $subject->getDBkey() );
