@@ -15,6 +15,7 @@ class VotingSummaryJob extends Job
      */
     public function run()
     {
+
         // Load data from $this->params and $this->title
         $article = new Article($this->title, 0);
 
@@ -27,16 +28,18 @@ class VotingSummaryJob extends Job
     private function oldWaySummary()
     {
 
+        global $wgDBprefix;
+
         $pageId = $this->title->getArticleID();
         $dbr = wfGetDB( DB_MASTER );
 
-        $dbr->query( 'DELETE FROM wv_voting_page_summary WHERE page_id = ' . $pageId );
+        $dbr->query( 'DELETE FROM '.$wgDBprefix.'wv_voting_page_summary WHERE page_id = ' . $pageId );
 
         /* Summary */
         $summary = array();
 
         //without revision
-        $rVotes = $dbr->query( 'SELECT rating_id,group_id,user_id,value FROM wv_voting_values WHERE page_id = ' . $pageId );
+        $rVotes = $dbr->query( 'SELECT rating_id,group_id,user_id,value FROM '.$wgDBprefix.'wv_voting_values WHERE page_id = ' . $pageId );
 
         while ( $rowVote = $dbr->fetchRow( $rVotes ) ) {
 
@@ -56,12 +59,12 @@ class VotingSummaryJob extends Job
 
                 $sumRuleValue = $arrValues['summary'] / $arrValues['count'];
 
-                $rTitle = $dbr->query( 'SELECT name FROM wv_voting_ratings WHERE id = ' . $ratingId );
+                $rTitle = $dbr->query( 'SELECT name FROM '.$wgDBprefix.'wv_voting_ratings WHERE id = ' . $ratingId );
                 $title = $dbr->fetchRow( $rTitle );
                 $title = $title['name'];
 
                 //Save summary
-                $dbr->query( "INSERT INTO wv_voting_page_summary VALUES(null, $pageId, $groupId, $ratingId, '*', $sumRuleValue, '$title')" );
+                $dbr->query( "INSERT INTO ".$wgDBprefix."wv_voting_page_summary VALUES(null, $pageId, $groupId, $ratingId, '*', $sumRuleValue, '$title')" );
 
             }
 

@@ -250,7 +250,11 @@ class Voting
     public static function addVotingJob( Title $title )
     {
         $job = new VotingSummaryJob($title, array());
-        $job->insert();
+        if( class_exists('JobQueueGroup') ) {
+            JobQueueGroup::singleton()->push( $job );
+        }else{
+            $job->insert();
+        }
     }
 
     /**
